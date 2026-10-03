@@ -1,0 +1,120 @@
+{
+  "benchmark": "Independent Dirichlet(1,...,1) shares on common support; predetermined normalized prices; strict CCEI < 1-epsilon.",
+  "alpha": "4/5",
+  "fixed_M": 10,
+  "design_rules": [
+    "n=1",
+    "n=min(floor(s/2),max(1,floor(kappa_star*s)))",
+    "n=floor(s/2)"
+  ],
+  "cases": [
+    {
+      "id": "C01",
+      "R": "6/5",
+      "epsilon": "1/200",
+      "s": 20,
+      "role": "main",
+      "reason": "Interior tolerance; original price bound.",
+      "enumerate_all_n": true
+    },
+    {
+      "id": "C02",
+      "R": "6/5",
+      "epsilon": "1/200",
+      "s": 100,
+      "role": "main",
+      "reason": "Interior tolerance; original price bound.",
+      "enumerate_all_n": true
+    },
+    {
+      "id": "C03",
+      "R": "6/5",
+      "epsilon": "1/200",
+      "s": 400,
+      "role": "main",
+      "reason": "Interior tolerance; original price bound.",
+      "enumerate_all_n": false
+    },
+    {
+      "id": "C04",
+      "R": "6/5",
+      "epsilon": "1/100",
+      "s": 20,
+      "role": "main",
+      "reason": "Larger interior tolerance at the same price bound.",
+      "enumerate_all_n": true
+    },
+    {
+      "id": "C05",
+      "R": "6/5",
+      "epsilon": "1/100",
+      "s": 100,
+      "role": "main",
+      "reason": "Larger interior tolerance at the same price bound.",
+      "enumerate_all_n": false
+    },
+    {
+      "id": "C06",
+      "R": "6/5",
+      "epsilon": "1/100",
+      "s": 400,
+      "role": "main",
+      "reason": "Larger interior tolerance at the same price bound.",
+      "enumerate_all_n": false
+    },
+    {
+      "id": "C07",
+      "R": "3/2",
+      "epsilon": "1/200",
+      "s": 20,
+      "role": "main",
+      "reason": "Same tolerance as first group; isolate wider permitted prices.",
+      "enumerate_all_n": true
+    },
+    {
+      "id": "C08",
+      "R": "3/2",
+      "epsilon": "1/200",
+      "s": 100,
+      "role": "main",
+      "reason": "Same tolerance as first group; isolate wider permitted prices.",
+      "enumerate_all_n": false
+    },
+    {
+      "id": "C09",
+      "R": "3/2",
+      "epsilon": "1/200",
+      "s": 400,
+      "role": "main",
+      "reason": "Same tolerance as first group; isolate wider permitted prices.",
+      "enumerate_all_n": false
+    },
+    {
+      "id": "C10",
+      "R": "3/2",
+      "epsilon": "1/20",
+      "s": 100,
+      "role": "main",
+      "reason": "Five-percent tolerance inside the global matching range at a wider price bound.",
+      "enumerate_all_n": false
+    },
+    {
+      "id": "C11",
+      "R": "6/5",
+      "epsilon": "1/61",
+      "s": 100,
+      "role": "boundary",
+      "reason": "Exact upper endpoint of the global matching range.",
+      "enumerate_all_n": false
+    },
+    {
+      "id": "C12",
+      "R": "6/5",
+      "epsilon": "1/20",
+      "s": 100,
+      "role": "outside",
+      "reason": "Five-percent tolerance outside the global matching range; family comparison only.",
+      "enumerate_all_n": false
+    }
+  ]
+}

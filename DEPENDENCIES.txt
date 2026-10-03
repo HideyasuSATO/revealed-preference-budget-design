@@ -1,0 +1,11 @@
+Tested runtime: R 4.6.1 (2026-06-24 UCRT), Windows x86_64
+Tested packages:
+  gmp 0.7.5.1
+  jsonlite 2.0.0
+
+Rmpfr is not required. All mathematical decisions use gmp exact arithmetic.
+No package is installed automatically. Actual run-specific versions are
+written by the script to output/<mode>/session_info.txt and validation.json.
+
+These are tested versions, not a claim that other versions fail or that a
+cross-platform environment has been certified. See README.txt for execution.
