@@ -1,0 +1,20 @@
+# Generated numerical output; recreate with reproduce.R
+output/
+
+# Local R session, user configuration, and editors
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.Rprofile
+.Rproj.user/
+*.Rproj
+.DS_Store
+Thumbs.db
+*~
+
+# Local package libraries or environments are not part of the source release
+library/
+.library/
+renv/library/
+renv/staging/
